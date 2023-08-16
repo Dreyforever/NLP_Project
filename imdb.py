@@ -24,7 +24,7 @@ training_args = TrainingArguments(
     output_dir="./sentiment_model",         # Directory to save model checkpoints and logs
     evaluation_strategy="steps",            # Evaluate during training at certain steps
     save_strategy="steps",                  # Save model during training at certain steps
-    learning_rate=1e-5,                     # Learning rate for optimizer
+    learning_rate=1e-5,                    
     per_device_train_batch_size=8,          # Batch size for training
     per_device_eval_batch_size=8,           # Batch size for evaluation
     num_train_epochs=1,                     # Number of training epochs (1 epoch here) to lower the training time
@@ -34,8 +34,8 @@ training_args = TrainingArguments(
 
 # Create a Trainer instance for training the model
 trainer = Trainer(
-    model=model,                            # The model to be trained
-    args=training_args,                     # Training arguments defined above
+    model=model,                           
+    args=training_args,                    
     train_dataset=tokenized_datasets["train"],  # Training dataset after tokenization
     eval_dataset=tokenized_datasets["test"],    # Evaluation dataset after tokenization
 )
