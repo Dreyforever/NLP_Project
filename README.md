@@ -3,3 +3,5 @@ The task that I have chosen here is the sentiment analysis of IMDb reviews for v
 
 Problem Faced:
 Unfortunately I was not able to run the code completely as the completion time for the code was over 8 hrs and the code kept getting terminated in the process which was very frustrating. The CPU's processing capabilities seemed to be a bottleneck for the time it was taking to train the model
+
+PS: The image.png shows a checkpoint in the fine tuning of the model
